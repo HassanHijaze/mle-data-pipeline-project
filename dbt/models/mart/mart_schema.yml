@@ -1,0 +1,19 @@
+version: 2
+
+models:
+  - name: fct_daily_revenue
+    description: Total revenue and number of trips per day.
+    columns:
+      - name: pickup_date
+        description: The day of the trips.
+        tests:
+          - unique
+          - not_null
+      - name: trip_count
+        description: Number of trips that day.
+        tests:
+          - not_null
+      - name: revenue
+        description: Sum of total_amount for that day.
+        tests:
+          - not_null

@@ -1,0 +1,13 @@
+[project]
+name = "green-taxi-dbt"
+version = "0.1.0"
+requires-python = ">=3.13.17, <3.14"
+dependencies = [
+    "dbt-postgres>=1.11.0",
+    "pandas>=3.1.0",
+    "prefect>=3.9.0",
+    "psycopg[binary]>=3.3.8",
+    "pyarrow>=26.0.0",
+    "requests>=2.34.2",
+    "sqlalchemy>=2.1.6",
+]

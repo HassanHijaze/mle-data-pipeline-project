@@ -164,8 +164,8 @@ cython_debug/
 # MacOS files
 .DS_Store
 
-# Solution data files
-solution/data/raw/*
-solution/data/processed/*
-!solution/data/raw/.gitkeep
-!solution/data/processed/.gitkeep
+data/
+dbt/.user.yml
+dbt/target/
+dbt/logs/
+.venv/

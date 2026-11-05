@@ -1,0 +1,17 @@
+name: green_taxi
+version: "1.0.0"
+profile: green_taxi
+
+model-paths: ["models"]
+
+models:
+  green_taxi:
+    staging:
+      +schema: stg
+      +materialized: view
+    intermediate:
+      +schema: int
+      +materialized: view
+    mart:
+      +schema: mart
+      +materialized: table

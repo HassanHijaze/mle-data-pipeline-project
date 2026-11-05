@@ -1,0 +1,14 @@
+version: 2
+
+models:
+  - name: stg_green_taxi
+    description: Cleaned Green Taxi trips for January to March 2025.
+    columns:
+      - name: pickup_datetime
+        description: When the trip started.
+        tests:
+          - not_null
+      - name: total_amount
+        description: Total amount paid for the trip.
+        tests:
+          - not_null
